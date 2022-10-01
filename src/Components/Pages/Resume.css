@@ -1,0 +1,30 @@
+.resume_container{
+ width: 100%;
+ background-color: white;
+ font-family:'Quicksand', sans-serif ;  
+}
+.grid-container{
+   padding: 5rem;
+   display: grid;
+   grid-template-rows: auto auto;
+   grid-template-columns:  repeat(3 ,1fr);
+   column-gap: 2px;
+}
+.grid-container h3{
+    padding: .5rem;
+    margin-bottom: 0px;
+    /* background-color: rgb(192, 190, 190); */
+}
+.grid-container h4{
+margin-bottom: 0px;
+}
+.grid-container p{
+    margin-bottom: 0px;
+    }
+.grid-item{
+    background-color: rgb(235, 235, 235);
+    min-height:20rem;
+}
+.grid-content{
+    padding: 0rem 1rem;
+}

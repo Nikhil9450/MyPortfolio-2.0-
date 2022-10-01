@@ -1,0 +1,37 @@
+.home_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Quicksand', sans-serif ;
+    min-height: inherit;
+}
+.home_container h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: grey;
+
+}
+.hometitle{
+    background-color: grey;
+    color:white;
+    margin-bottom: 1rem;
+}
+.leftdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 70vh;
+    padding: 3rem;
+
+}
+.rightdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-left: 2px solid rgb(103, 102, 102);
+    min-height: 70vh;
+}

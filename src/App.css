@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+/* .Container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+} */
+.Container{
+  background-color:rgb(238, 237, 237) ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section{
+ min-height: 100vh;
+ scroll-snap-align: start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .Home_section{
+  background-color:rgb(221, 221, 221) ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Introduction_section{
+  background-color: rgb(232, 232, 232) ;
 }
-
-.App-link {
-  color: #61dafb;
+.Project_section{
+  background-color: #201E20 ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Resume_section{
+  background-color: #E0A96D ;
 }
+.Contact_section{
+  background-color:#EE4E34 ;
+} */
