@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 
@@ -26,7 +27,6 @@ const Home = () => {
         <div className='rightdiv'>
         <FontAwesomeIcon className='fa-solid fa-spin' icon={faReact} size='10x' color='grey' />
         </div>
-        
     </div>
 
   )
