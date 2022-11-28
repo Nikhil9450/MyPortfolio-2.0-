@@ -26,4 +26,24 @@
     border: none;
     border-bottom: 1px solid grey;
     background: none;
+    width: 25rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+}
+.formcontainer textarea{
+    width: 25rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.formcontainer button{
+    padding:.5rem 1rem;
+    border: 1px solid grey;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
