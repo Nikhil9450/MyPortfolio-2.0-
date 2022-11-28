@@ -9,6 +9,7 @@
    grid-template-rows: auto auto;
    grid-template-columns:  repeat(3 ,1fr);
    column-gap: 2px;
+   row-gap: 2px;
 }
 .grid-container h3{
     padding: .5rem;
@@ -27,6 +28,16 @@ margin-bottom: 0px;
 }
 .grid-content{
     padding: 0rem 1rem;
+}
+
+@media screen and (max-width: 1000px){
+    .grid-container{
+        padding: 2rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2px;
+    }
 }
 
 @media screen and (max-width: 800px){
