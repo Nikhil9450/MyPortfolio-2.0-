@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 .Header_container{
    position: sticky;
     top:0px;
-    background:white;
+    background:rgb(19 25 49);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -12,10 +14,12 @@
 }
 
 .Header_container a {
+    font-family: 'Julius Sans One';
+    font-weight: bold;
     text-decoration: none;
-    color: rgb(58, 57, 57);
+    color: rgb(98, 246, 255);
+    transition: transform .6s;
     margin: .5rem;
-    font-family: 'Quicksand', sans-serif;
 }
 .mobileHeader{
     display: none;
@@ -40,15 +44,18 @@
   } */
   .Header_container a:hover::before {
     /* font-weight: 600; */
-    font-size: 1.2rem;
-    color: black;
+    /* font-size: 1.2rem; */
+    text-transform: .2rem;
+    /* text-shadow: rgb(61 223 255) 1px 0px 10px; */
     /* transform: scale(1.1); */
     /* box-shadow: 0 0 15px #ffee10; */
   }
   .Header_container a:hover {
     /* font-weight: 600; */
-    font-size: 1.2rem;
-    color: black;
+    /* font-size: 1.2rem; */
+    text-transform: .2rem;
+    color: aqua;
+    text-shadow: rgb(121, 233, 255) 1px 0px 10px;
     /* color: #ffee10; */
     /* box-shadow: 0 0 5px #ffee10; */
     /* text-shadow: 0 0 5px #ffee10; */

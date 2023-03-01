@@ -21,22 +21,22 @@ const Projects = () => {
 
 
     return (
-      <div>
+      <div className='main_container'>
           <Container className='container'>
           <div>
             <Row >
               <Col sm className='maincolumn'>             
-              <Card  className='column'>
-              <Card.Img variant="top" src={img1} />
-              <Card.Body>
-                <Card.Title>Keeper App</Card.Title>
-                <Card.Text>
-                In this project we can keep aur notes with title on the local server.
-                We can add and remove notes in the app.
-                </Card.Text>
-                <Card.Link href="#">Not hosted yet</Card.Link>
-              </Card.Body>
-               </Card>
+                <Card  className='column'>
+                  <Card.Img variant="top" src={img1} />
+                  <Card.Body>
+                    <Card.Title>Keeper App</Card.Title>
+                    <Card.Text>
+                    In this project we can keep aur notes with title on the local server.
+                    We can add and remove notes in the app.
+                    </Card.Text>
+                    <Card.Link href="#">Not hosted yet</Card.Link>
+                  </Card.Body>
+                </Card>
 
              </Col>
 

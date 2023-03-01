@@ -4,18 +4,12 @@
  font-family:'Quicksand', sans-serif ;  
 }
 .grid-container{
-   padding: 5rem;
    display: grid;
    grid-template-rows: auto auto;
-   grid-template-columns:  repeat(3 ,1fr);
-   column-gap: 2px;
+   grid-template-columns:  1fr 2fr;
    row-gap: 2px;
 }
-.grid-container h3{
-    padding: .5rem;
-    margin-bottom: 0px;
-    /* background-color: rgb(192, 190, 190); */
-}
+
 .grid-container h4{
 margin-bottom: 0px;
 }
@@ -23,13 +17,93 @@ margin-bottom: 0px;
     margin-bottom: 0px;
     }
 .grid-item{
-    background-color: rgb(235, 235, 235);
-    min-height:20rem;
+    /* min-height:20rem; */
+    height: 100vh;
 }
 .grid-content{
-    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:1fr;
+    /* padding: 0rem 1rem; */
 }
 
+.item1{
+    justify-self: center;
+    background-color: rgb(19 25 49);
+}
+.item1 p{
+    color: aliceblue;
+}
+.item1 h2,h5{
+    color: aliceblue;
+}
+.education h5{
+    color: black;
+}
+.childof2_2 h5{
+    color: black;
+}
+.item2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns:repeat(2, 1fr);
+    background-color:rgb(236, 237, 239);
+}
+.profile{
+    height: 10rem;
+    width: 10rem;
+}
+.profilecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 2rem;
+}
+.progressbarContainer{
+    margin: 2rem;
+}
+.grid2-item{
+/* border: 1px solid; */
+height: inherit;
+}
+.item2_2{
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+    grid-template-columns:auto ;
+    padding: 10px 10px;
+}
+.childof2_2{
+    /* border: 1px solid; */
+}
+.item2_2_1{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows:1fr 4fr;
+    
+}
+.item2_2_2{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows:1fr 2fr;
+    
+}
+.education{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns:repeat(2, 1fr);
+}
+.item2_1{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows:1fr 1fr;
+    padding: 10px 10px;
+}
+.project{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 1fr);
+}
 @media screen and (max-width: 1000px){
     .grid-container{
         padding: 2rem;

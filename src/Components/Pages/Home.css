@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
 .home_container{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family:'Quicksand', sans-serif ;
     min-height: inherit;
+    background-image: url("../../asset/background.jpg");
+    background-size: cover;
+    
 }
 .home_container h1{
+    font-family: 'Neonderthaw', cursive;
     font-size: 2.5rem;
     font-weight: 400;
-    color: grey;
+    color: rgb(250, 248, 248);
+
+}
+.home_container p{
+  
+    color: rgb(226, 223, 223);
 
 }
 .hometitle{
@@ -23,7 +34,7 @@
     align-items: flex-start;
     flex: 1;
     min-height: 70vh;
-    padding: 3rem;
+    padding: 3rem 26rem;
 
 }
 .rightdiv{

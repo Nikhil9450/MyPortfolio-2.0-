@@ -20,8 +20,7 @@ const Header = () => {
     <div className='Header_container'>
       <div>
        <a href='#firstsection'>Home</a>
-      </div>
-      <div>
+     
         <a href='#thirdsection'>Resume</a>
         <a href='#fourthsection'>Works</a>
         <a href='#fifthsection'>Contact</a> 
