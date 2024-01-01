@@ -9,11 +9,15 @@ const Resume = () => {
       <div className='row1'>
         <div className='col1 item'>
           <div className='profilecontainer'>
-              <img class="profile" src={img3} />
-              <h2>Nikhil Kushwaha</h2>
+              {/* <img class="profile" src={img3} /> */}
+              <h1 className='name'>NIKHIL <span className='title'> KUSHWAHA</span> </h1>
               <h5>Web Developer</h5>
               <p>
-              Seeking a responsible job with an opportunity for professional challenges where my ability and professional skills can be fully utilized, and learn new technology and while serving the company with sincerity and dedication.
+                As a highly skilled Web Developer with 1.5 years of experience, I have a proven 
+                track record of delivering exceptional results. My expertise lies in 
+                React, Redux, and JavaScript, along with knowledge of HTML and CSS. I am a quick 
+                learner and thrive in fast-paced environments. My best qualities include adaptability, 
+                teamwork, and communication skills, making me an asset to any development team.
               </p>
           </div>
         </div>
@@ -42,37 +46,23 @@ const Resume = () => {
 
         <div className='col3 item'>
           <div  className='projectsection'>
-                <div>
-                  <h4>PERSONAL PROJECTS</h4>
-                </div>
-                <div className='project'>
-                  <div>
-                    <h5>My portfolio</h5>
-                  </div>
-                  <div>
-                  {/* <p>Using React, HTML,CSS, Javascript,Bootstrap,Firebase</p> */}
-                    <a href='https://my-portfolio-a564b.web.app/'>https://my-portfolio-a564b.web.app/ </a>
-                  </div>
-                  <div>
-                    <h5>Food Order App</h5>
-                  </div>
-                  <div>
-                  {/* <p>Using React, HTML,CSS, Javascript,Bootstrap,Firebase</p> */}
-                  </div>
-                  <div>
-                    <h5> Keeper App</h5>
-                  </div>
-                  <div>
-                  {/* <p>Using React, HTML,CSS, Javascript,Bootstrap,Firebase</p> */}
-                  </div>
-                  <div>
-                    <h5> SpaceX missions</h5>
-                  </div>
-                  <div>
-                    {/* <p>Using React, HTML,CSS, Javascript,Bootstrap,Firebase</p> */}
-                    <a href='https://authentication-ae8a1.web.app/'>https://authentication-ae8a1.web.app/</a>
-                  </div>
-                </div>   
+            <div>
+              <h4>PERSONAL PROJECTS</h4>
+            </div>
+            <ul>
+              <li>
+                <h5>My portfolio <span> <a href='https://my-portfolio-a564b.web.app/'>https://my-portfolio-a564b.web.app/ </a></span> </h5>
+              </li>
+              <li>
+                <h5>Food Order App</h5>
+              </li>
+              <li>
+                <h5> Keeper App</h5>
+              </li>
+              <li>
+                <h5> SpaceX missions <span><a href='https://authentication-ae8a1.web.app/'>https://authentication-ae8a1.web.app/</a></span></h5>
+              </li>
+            </ul>  
           </div>
         </div>
       </div>

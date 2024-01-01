@@ -12,9 +12,9 @@
 .profilecontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 2rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 4rem 2rem; */
 }
 .profile{
     height: 10rem;
@@ -22,6 +22,7 @@
 }
 .item{
     flex: 1;
+    padding: 0 3rem;
 }
 .experience{
     border-bottom: 2px solid #bebebe;
@@ -34,10 +35,23 @@
     margin-bottom: 0px;
     color: #747474;
 }
-
+.profilecontainer p{
+    color: #747474;
+    font-size: .9rem;
+    font-weight: 500;
+}
 .duration{
     color: grey;
     font-weight: 500;
+}
+.name{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: dimgrey;
+    border-bottom: 3px solid;
+}
+.title{
+   font-weight: lighter;
 }
 /* .resume_container{
  width: 100%;
