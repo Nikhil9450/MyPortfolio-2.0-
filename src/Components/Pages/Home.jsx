@@ -22,7 +22,7 @@ const Home = () => {
           1000,
           ]}
           speed={50} // Custom Speed from 1-99 - Default Speed: 40
-          style={{ fontSize: '2.5rem',fontFamily:'Neonderthaw' , fontWeight:'400',  color: 'rgb(98 246 255)',textShadow:'#3ddfff 1px 0 10px' }}
+          style={{ fontSize: '2rem',fontFamily:'monospace' , fontWeight:'400',  color: 'white' }}
           wrapper="span" // Animation will be rendered as a <span>
           repeat={Infinity} // Repeat this Animation Sequence infinitely
         />

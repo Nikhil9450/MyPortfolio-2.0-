@@ -3,11 +3,12 @@
     /* background-color: white; */
     font-family:'Quicksand', sans-serif ; 
     padding: 1rem; 
+    min-height: inherit;
    }
 .row1{
     display: flex;
     justify-content: row;
-
+    min-height: inherit;
 }
 .profilecontainer{
     display: flex;
