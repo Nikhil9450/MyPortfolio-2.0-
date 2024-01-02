@@ -22,14 +22,14 @@
 }
 .item{
     flex: 1;
-    padding: 0 3rem;
+    padding: 1rem 2rem;
 }
-.experience{
-    border-bottom: 2px solid #bebebe;
+.experience1{
+    border-bottom: 2px solid #d8d8d8;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
-.experience p{
+.experience1 p, .experience2 p{
     font-size: .9rem;
     font-weight: 500;
     margin-bottom: 0px;
@@ -40,6 +40,19 @@
     font-size: .9rem;
     font-weight: 500;
 }
+.skillcontainer table{
+        table-layout: fixed;
+        width: 100%;
+}
+.skillcontainer td{
+    width: calc(100% / number_of_columns);
+}
+.skillcontainer p{
+    padding:0;
+    margin: 0;
+    font-size: .9rem;
+    color: rgb(84, 84, 84);
+}
 .duration{
     color: grey;
     font-weight: 500;
@@ -48,11 +61,59 @@
     font-size: 2rem;
     font-weight: bolder;
     color: dimgrey;
-    border-bottom: 3px solid;
+    margin: 0px;
 }
 .title{
    font-weight: lighter;
 }
+.education, .projectsection, .experience, .namesection{
+    border-bottom: 2px solid #bebebe;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.namesection h5{
+    color: grey;
+}
+.col1{
+    background-color: #d3d3d3;
+}
+.col2, .col3{
+    background-color: #e2e2e2;
+}
+/* .projectsection{
+    border-bottom: 2px solid #bebebe;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.skillcontainer{
+    border-bottom: 2px solid #bebebe;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+} */
+.education h5{
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin: 0px;
+}
+.education p{
+    font-size: .9rem;
+    font-weight: 500;
+    color: grey;
+}
+@media screen and (max-width: 900px){
+    .row1{
+     flex-direction: column;
+    }
+    .col3{
+        display: flex;
+        flex-direction: column;
+    }
+    .col3_item{
+        flex: 1;
+    }
+}
+
 /* .resume_container{
  width: 100%;
  background-color: white;

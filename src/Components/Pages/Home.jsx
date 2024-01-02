@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
 // import Offcanvas from 'react-bootstrap/Offcanvas';
 
@@ -10,11 +10,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
 
-
   return (
     <div className='home_container'>
         <div className='leftdiv'>
-
         <TypeAnimation
          // Same String at the start will only be typed once, initially
           sequence={[
@@ -32,10 +30,7 @@ const Home = () => {
             Hi! I am Nikhil Kushwaha and I'm
             <span className='hometitle'> a Webapp developer.</span>
           </h1>*/}
-          <p>I'm React Webapp Developer based in Varanasi,India,I have 3 months
-            of commercial experience  and I am specialize in creating
-            web apps. I am open for new opportunities and
-            intresting projects.
+          <p>I'm a highly skilled Web Developer with 1.5 years of experience, specializing in React, Redux, and JavaScript, complemented by strong HTML and CSS knowledge. Known for delivering exceptional results, I thrive in fast-paced environments and bring adaptability, teamwork, and excellent communication skills to any development team. Let's build something extraordinary together!
           </p> 
         </div>
 

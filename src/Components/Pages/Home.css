@@ -6,8 +6,9 @@
     align-items: center;
     font-family:'Quicksand', sans-serif ;
     min-height: inherit;
-    background-image: url("../../asset/background.jpg");
-    background-size: cover;
+    /* background-image: url("../../asset/background.jpg"); */
+    /* background-size: cover; */
+    background: black;
     
 }
 .home_container h1{
@@ -34,7 +35,7 @@
     align-items: flex-start;
     flex: 1;
     min-height: 70vh;
-    padding: 3rem 26rem;
+    padding: 3rem 10rem;
 
 }
 .rightdiv{

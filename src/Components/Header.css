@@ -3,7 +3,7 @@
 .Header_container{
    position: sticky;
     top:0px;
-    background:rgb(19 25 49);
+    background:rgb(24, 24, 24);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     font-family: 'Julius Sans One';
     font-weight: bold;
     text-decoration: none;
-    color: rgb(98, 246, 255);
+    color: rgb(186, 186, 186);
     transition: transform .6s;
     margin: .5rem;
 }
