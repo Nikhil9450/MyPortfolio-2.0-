@@ -3,7 +3,10 @@ import "./Contact.css";
 import contactme from  '../../asset/contact1.svg';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Loader from '../Loader';
+import Swal from 'sweetalert2'
 const Contact = () => {
+  const [loading,setLoading]=useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,24 +21,46 @@ const Contact = () => {
     }));
   };
 
+  const modifiedFormData = {
+    ...formData,
+    from_name: formData.name, // Set from_name to the value of 'name' input
+    to_name: 'Nikhil', // Set to_name as 'Nikhil'
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-   
+    setLoading(true);
+    console.log("formdata--------->",formData)
+    console.log("modifiedFormData----------->",modifiedFormData)
     // Replace these with your actual EmailJS service ID, template ID, and user ID
-    const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
-    const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
-    const userId = 'YOUR_EMAILJS_USER_ID';
-
-    emailjs.send(serviceId, templateId, formData, userId)
+    const serviceId = 'service_d4ovzpe';
+    const templateId = 'template_slxubff';
+    const publickey = 'wz1PE2_ImgnAStVQt';
+    emailjs.send(serviceId, templateId, modifiedFormData, publickey)
       .then((response) => {
+        setLoading(false);
         console.log('Email sent!', response.status, response.text);
         // Add any success message or state update here
+        Swal.fire({
+          icon: "success",
+          title: "Message sent.",
+          text: "Thankyou for contacting me.",
+        });
       })
       .catch((error) => {
+        setLoading(false);
         console.error('Error sending email:', error);
         // Add error handling or state update for failure
+        Swal.fire({
+          icon: "error",
+          title: "Failed",
+          text: "Error sending email.",
+        });
+      })     
+      .finally(() => {
+        setLoading(false); // Set loading back to false when email sending process is finished
       });
-
+    }
   return (
     <div className='contact'>
     <div className='contact_row'>
@@ -57,7 +82,9 @@ const Contact = () => {
             <textarea type='text' name='message' placeholder='Message' value={formData.message} onChange={handleChange} required></textarea>
           </div>
           <div className='btncontainer'>
-            <button type="submit">Send</button>
+            <button type="submit"> {loading ? <Loader/> : 'Send'}</button>
+            {/* <button type="submit">  <Loader/></button> */}
+
           </div>
         </form>
       </div>

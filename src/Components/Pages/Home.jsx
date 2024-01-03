@@ -22,7 +22,7 @@ const Home = () => {
           'I am a Webapp developer.',
           1000,
           ]}
-          speed={50} // Custom Speed from 1-99 - Default Speed: 40
+          speed={80} // Custom Speed from 1-99 - Default Speed: 40
           style={{ fontSize: '2rem',fontFamily:'Raleway' , fontWeight:'300',  color: 'white' }}
           wrapper="span" // Animation will be rendered as a <span>
           repeat={Infinity} // Repeat this Animation Sequence infinitely
