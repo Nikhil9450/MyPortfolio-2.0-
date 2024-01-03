@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Raleway:wght@300;600&display=swap');
 .home_container{
     display: flex;
     justify-content: center;
@@ -32,13 +32,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
     min-height: 70vh;
     padding: 3rem 10rem;
 
 }
-.rightdiv{
+.leftdiv h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #b3b3b3;
+}
+/* .rightdiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +52,7 @@
     flex: 1;
     border-left: 2px solid rgb(103, 102, 102);
     min-height: 70vh;
-}
+} */
 
 @media screen and (max-width: 800px){
     .home_container{

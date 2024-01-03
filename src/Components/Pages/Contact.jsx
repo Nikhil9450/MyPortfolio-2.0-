@@ -1,17 +1,15 @@
 import React from 'react';
-import "./Contact.css"
+import "./Contact.css";
+import contactme from  '../../asset/contact1.svg';
 
 const Contact = () => {
   return (
     <div className='contact'>
-    <div className='contact_container'>
-      <div>
-        <div className='gmap_container'>
-        <iframe className='gmap' class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Delhi&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        </div>
+    <div className='contact_row'>
+      <div className='row_item item1'>
+      <img className='contactme' src={contactme} alt="svg" />
       </div>
-
-      <div className='formcontainer'>
+      <div className='formcontainer row_item item2'>
         <form>
           <div className='inputfield'>
             {/* <label>Name</label> */}
@@ -21,18 +19,21 @@ const Contact = () => {
             {/* <label>Email</label> */}
             <input type='email' placeholder='Email'></input>
           </div>
-          <div className='inputfield'>
+          <div className='inputfield' >
             {/* <label>Subject</label> */}
             <input type='text' placeholder='Subject'></input>
           </div>
-          <div className='inputfield'>
-            <label>Message</label>
-            <textarea type='text'></textarea>
+          <div className='inputfield message' >
+            {/* <label>Message</label> */}
+            <textarea type='text' placeholder='Message'></textarea>
           </div>
-          <button>Submit</button>
+          <div className='btncontainer'>
+            <button>Submit</button>
+          </div>
         </form>
       </div>
     </div>
+
     </div>
   )
 }

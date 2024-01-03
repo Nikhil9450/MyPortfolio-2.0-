@@ -20,7 +20,7 @@ const Resume = () => {
                 track record of delivering exceptional results. My expertise lies in 
                 React, Redux, and JavaScript, along with knowledge of HTML and CSS. I am a quick 
                 learner and thrive in fast-paced environments. My best qualities include adaptability, 
-                teamwork, and communication skills, making me an asset to any development team.
+                teamwork, and communication skills, making me an asset to any organization.
               </p>
           </div>
           <DownloadLink/>
@@ -41,7 +41,7 @@ const Resume = () => {
             <div className='experience2'>
                 <p className='duration'>June 2022 - August 2022</p>
                 <h5>Developer Intern</h5>
-                <h5>AGRICULTURE INSURANCE COMPANY OF INDIA LIMITED / India, New Delhi</h5>
+                <h5>GANIT INC. / India, Chennai</h5>
                 <p>During my time as a Developer Intern at Ganit Inc. I was able to gain valuable hands-on experience in React js and 
                     project management. Working alongside a team of experienced developers, 
                     I had the opportunity to contribute to various projects and learn from their 
