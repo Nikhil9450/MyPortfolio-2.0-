@@ -1,6 +1,7 @@
 .main_container{
     background-image: url("../../asset/react-js.jpg");
     background-size: cover;
+    min-height: inherit;
 }
 
 .container{
