@@ -44,7 +44,7 @@ const Header = () => {
       {/* <button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button> */}
       {show? <button className='menubutton' onClick={handleClose}><FontAwesomeIcon icon={faXmark} /></button>:<button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button>}
       
-      <Offcanvas show={show} onHide={handleClose} scroll={true} backdrop= {true} style={{ width: '250px' }}>
+      <Offcanvas show={show} onHide={handleClose} scroll={false} backdrop= {true} style={{ width: '250px' }}>
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body className='Offcanva_body'>

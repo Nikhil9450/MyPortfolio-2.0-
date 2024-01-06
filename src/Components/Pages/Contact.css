@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 .contact_row{
     min-height: inherit;
    display: flex;
@@ -95,7 +96,7 @@ min-height: inherit;
     justify-content: end;
 }
 .contactme{
-    height: 18rem;
+    height: 10rem;
 }
 .item1{
     display: flex;
@@ -130,21 +131,36 @@ min-height: inherit;
 .socialLinks a:hover{
     color: rgb(106, 106, 106);
 }
-.svg_container{
+/* .svg_container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 .emailaddress{
-    padding: 3rem 1rem;
-    color: grey;
-    font-family: 'Raleway';
-    font-weight: 600;
+    /* padding: 3rem 1rem; */
+    /* color: grey; */
+    /* font-family: 'Raleway'; */
+    /* font-weight: 600; */
+}
+.p1{
+    margin: 0px;
+    font-size: 1rem;
 }
 .mobileemailaddress{
     display: none;
 }
+.looking{
+    font-size: 2rem;
+}
 @media screen and (max-width: 900px){
+  .contact-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }  
   .contact_row{
     flex-direction: column;
   }
@@ -156,10 +172,8 @@ min-height: inherit;
   }
   .links_container{
     /* flex: 1; */
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    width: 100%;
+    display: none;
+
 }
 .mobileemailaddress{
     color: grey;
@@ -167,6 +181,11 @@ min-height: inherit;
     font-weight: 600;
     display: block;
 }
+.looking{
+    font-size: 1.2rem;
+}
+.p1{
+    font-size: 12px;
 }
 .item1{
     min-height: 1rem;
@@ -174,6 +193,12 @@ min-height: inherit;
 .mobilegmaillink p{
   margin: 0px;
 }
+.svg_container{
+    height: 15rem;
+}
+}
+
+
 /* .contact{
     display: flex;
     justify-content: center;

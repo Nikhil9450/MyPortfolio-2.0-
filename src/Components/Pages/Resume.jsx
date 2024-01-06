@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <div className='resume_container'>
       <div className='row1 '>
-        <div className='col1 item' data-aos="fade-right" >
+        <div className='col1 item' data-aos="fade-up" >
           <div className='profilecontainer'>
               {/* <img class="profile" src={img3} /> */}
               <div className='namesection'>
@@ -51,7 +51,7 @@ const Resume = () => {
           </div>
             
         </div>
-        <div className='col3 item' data-aos="fade-left">
+        <div className='col3 item' data-aos="fade-up">
         <div className='education col3_item'>
             <h4>EDUCATION</h4>
             <div>

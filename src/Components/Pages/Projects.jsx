@@ -25,7 +25,7 @@ const Projects = () => {
           <Container className='container'>
           <div >
             <Row >
-              <Col sm className='maincolumn' data-aos="fade-down-right">             
+              <Col sm className='maincolumn' data-aos="fade-up">             
                 <Card  className='column' >
                   <Card.Img variant="top" src={img1} />
                   <Card.Body>
@@ -41,7 +41,7 @@ const Projects = () => {
              </Col>
 
 
-              <Col sm className='maincolumn' data-aos="fade-down">
+              <Col sm className='maincolumn' data-aos="fade-up">
               <Card  className='column'>
                 <Card.Img variant="top" src={img2} />
                 <Card.Body>
@@ -55,7 +55,7 @@ const Projects = () => {
               </Card>
               </Col>
 
-              <Col sm className='maincolumn' data-aos="fade-down-left">
+              <Col sm className='maincolumn' data-aos="fade-up">
               <Card  className='column'>
                 <Card.Img variant="top" src={img5} />
                 <Card.Body>
@@ -74,7 +74,7 @@ const Projects = () => {
 
             <Row> */}
 
-              <Col sm className='maincolumn' data-aos="fade-up-right">
+              <Col sm className='maincolumn' data-aos="fade-up">
                 <Card  className='column'>
                   <Card.Img variant="top" src={img3} />
                   <Card.Body>
@@ -103,7 +103,7 @@ const Projects = () => {
               </Col>
 
 
-              <Col sm className='maincolumn'data-aos="fade-up-left">
+              <Col sm className='maincolumn'data-aos="fade-up">
                 <Card  className='column'>
                   <Card.Img variant="top" src={img4} />
                   <Card.Body>

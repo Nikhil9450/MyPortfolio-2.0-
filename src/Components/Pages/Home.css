@@ -85,3 +85,14 @@
     
     }
 }
+@media screen and (max-width: 500px){
+    .home_container{
+        min-height: 40vh;
+    }
+    .leftdiv{
+        justify-content:center;
+    }
+    .leftdiv h1{
+        font-size: 2rem;
+    }
+}

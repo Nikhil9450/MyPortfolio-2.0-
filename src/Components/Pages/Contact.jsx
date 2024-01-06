@@ -8,7 +8,8 @@ import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter,faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
   const [loading,setLoading]=useState(false)
   const [formData, setFormData] = useState({
@@ -70,9 +71,6 @@ const Contact = () => {
     <div className='contact_row'>
       <div className='row_item item1'>
         <div className='links_container'>
-          <div className='mobilegmaillink'>
-            <p className='mobileemailaddress'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
-          </div>
           <div className='socialLinks'>
             <a href='https://www.linkedin.com/in/nikhil-k-14159810b'><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
             <a href='https://twitter.com/Nikhilk9839?t=oe0RHy9pCeCuR6lrHu-1GA&s=08'><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
@@ -80,8 +78,17 @@ const Contact = () => {
           </div> 
         </div>
         <div className='svg_container'>
-          <img className='contactme' src={contactme} alt="svg" />
-          <p className='emailaddress'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
+          {/* <img className='contactme' src={contactme} alt="svg" /> */}
+            <div className='contact-cont'>
+              <div style={{ padding: '1rem' }}>
+                <h1>Contact me</h1>
+                <h5 className='looking' style={{ fontFamily: 'Meow Script, cursive' }}>Looking forward to hearing you from</h5>
+              </div>
+              <div style={{ padding: '2rem 1rem', width:'15rem' }}>
+                <p className='p1'><FontAwesomeIcon icon={faPhone} size="lg"/> +919839148210</p>
+                <p className='p1'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
+              </div>
+            </div>
         </div>
       </div>
       <div className='formcontainer row_item item2'>
