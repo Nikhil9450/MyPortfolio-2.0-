@@ -44,22 +44,22 @@ const Header = () => {
       {/* <button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button> */}
       {show? <button className='menubutton' onClick={handleClose}><FontAwesomeIcon icon={faXmark} /></button>:<button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button>}
       
-      <Offcanvas show={show} onHide={handleClose} placement={"top"}   scroll={true} backdrop= {true}>
+      <Offcanvas show={show} onHide={handleClose} scroll={true} backdrop= {true} style={{ width: '250px' }}>
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className='Offcanva_body'>
           <div className='mobilecontents'>
           
             <div className='sectionLinks'>
               <div className='sectionLinks'>
-                <a href='#thirdsection'>Resume</a>
-                <a href='#fourthsection'>Works</a>
-                <a href='#fifthsection'>Contact</a> 
+                <a href='#thirdsection' onClick={handleClose}>Resume</a>
+                <a href='#fourthsection' onClick={handleClose}>Works</a>
+                <a href='#fifthsection' onClick={handleClose}>Contact</a> 
               </div>
               <div className='socialLinks'>
-                <a href='https://www.linkedin.com/in/nikhil-k-14159810b'><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
-                <a href='https://twitter.com/Nikhilk9839?t=oe0RHy9pCeCuR6lrHu-1GA&s=08'><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
-                <a href='https://github.com/Nikhil9450'><FontAwesomeIcon icon={faGithub} size="lg"/></a>
+                <a href='https://www.linkedin.com/in/nikhil-k-14159810b' onClick={handleClose}><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
+                <a href='https://twitter.com/Nikhilk9839?t=oe0RHy9pCeCuR6lrHu-1GA&s=08' onClick={handleClose}><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
+                <a href='https://github.com/Nikhil9450' onClick={handleClose}><FontAwesomeIcon icon={faGithub} size="lg"/></a>
               </div> 
             </div>
           </div>

@@ -70,6 +70,11 @@
   }
 
 @media screen and (max-width: 800px) {
+    .Offcanva_body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
     .Header_container{
         display: none;
     }
