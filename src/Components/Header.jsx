@@ -4,6 +4,8 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter,faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import logo from '../asset/LOGO.png';
+import mobile_logo from '../asset/MOBILE_LOGO.png';
 import "./Header.css";
 // import MobileMenu from './MobileMenu';
 
@@ -19,7 +21,11 @@ const Header = () => {
     <>
     <div className='Header_container'>
       <div>
-       <a href='#firstsection'>Home</a>
+        <a href='#firstsection'><img className='logo' src={logo} alt="logo" /></a>
+      </div>
+
+      <div>
+       {/* <a href='#firstsection'><img className='logo' src={logo} alt="logo" /></a> */}
      
         <a href='#thirdsection'>Resume</a>
         <a href='#fourthsection'>Works</a>
@@ -33,7 +39,7 @@ const Header = () => {
     </div>
     <div className='mobileHeader'>
       <div className='homeLink'>
-        <a href='#firstsection'>Home</a>
+        <a  href='#firstsection'><img className='mobilelogo' src={mobile_logo} alt="logo" /></a>
       </div>
       {/* <button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button> */}
       {show? <button className='menubutton' onClick={handleClose}><FontAwesomeIcon icon={faXmark} /></button>:<button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button>}

@@ -6,9 +6,9 @@
     align-items: center;
     font-family:'Quicksand', sans-serif ;
     min-height: inherit;
-    /* background-image: url("../../asset/background.jpg"); */
-    /* background-size: cover; */
-    background: black;
+    background-image: url("../../asset/my-image.jpg");
+    background-size:cover;
+    /* background: black; */
     
 }
 .home_container h1{
@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex: 1;
     min-height: 70vh;
     padding: 3rem 10rem;
@@ -40,10 +39,11 @@
 }
 .leftdiv h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #b3b3b3;
 }
+
 /* .rightdiv{
     display: flex;
     flex-direction: column;
@@ -57,8 +57,10 @@
 @media screen and (max-width: 800px){
     .home_container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        background-image: none;
+        background-color: black;
         align-items: center;
         font-family:'Quicksand', sans-serif ;
         min-height: 100vh;

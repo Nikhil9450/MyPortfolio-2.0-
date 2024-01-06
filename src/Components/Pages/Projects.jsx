@@ -23,10 +23,10 @@ const Projects = () => {
     return (
       <div className='main_container'>
           <Container className='container'>
-          <div>
+          <div >
             <Row >
-              <Col sm className='maincolumn'>             
-                <Card  className='column'>
+              <Col sm className='maincolumn' data-aos="fade-down-right">             
+                <Card  className='column' >
                   <Card.Img variant="top" src={img1} />
                   <Card.Body>
                     <Card.Title>Keeper App</Card.Title>
@@ -41,7 +41,7 @@ const Projects = () => {
              </Col>
 
 
-              <Col sm className='maincolumn'>
+              <Col sm className='maincolumn' data-aos="fade-down">
               <Card  className='column'>
                 <Card.Img variant="top" src={img2} />
                 <Card.Body>
@@ -55,7 +55,7 @@ const Projects = () => {
               </Card>
               </Col>
 
-              <Col sm className='maincolumn'>
+              <Col sm className='maincolumn' data-aos="fade-down-left">
               <Card  className='column'>
                 <Card.Img variant="top" src={img5} />
                 <Card.Body>
@@ -74,7 +74,7 @@ const Projects = () => {
 
             <Row> */}
 
-              <Col sm className='maincolumn'>
+              <Col sm className='maincolumn' data-aos="fade-up-right">
                 <Card  className='column'>
                   <Card.Img variant="top" src={img3} />
                   <Card.Body>
@@ -88,14 +88,14 @@ const Projects = () => {
                 </Card>
               </Col>
 
-              <Col sm className='maincolumn'>
+              <Col sm className='maincolumn' data-aos="fade-up">
                 <Card  className='column'>
                   <Card.Img variant="top" src={img6} />
                   <Card.Body>
-                    <Card.Title>Meetup app</Card.Title>
+                    <Card.Title>PCA </Card.Title>
                     <Card.Text>
-                    In this app we can store and add the places with images of meetups to visit
-                    you can also add your favourate meetup place.
+                     It is the project I worked during my internship.
+                     View tasks, performance, and appraisals in this project.It follows the organization's employee hierarchy for appraisal approval/rejection.
                     </Card.Text>
                     <Card.Link href="#">Not hosted yet</Card.Link>
                   </Card.Body>
@@ -103,7 +103,7 @@ const Projects = () => {
               </Col>
 
 
-              <Col sm className='maincolumn'>
+              <Col sm className='maincolumn'data-aos="fade-up-left">
                 <Card  className='column'>
                   <Card.Img variant="top" src={img4} />
                   <Card.Body>

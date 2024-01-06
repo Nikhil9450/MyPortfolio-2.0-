@@ -7,8 +7,8 @@ import DownloadLink from '../Resume_download';
 const Resume = () => {
   return (
     <div className='resume_container'>
-      <div className='row1'>
-        <div className='col1 item'>
+      <div className='row1 '>
+        <div className='col1 item' data-aos="fade-right" >
           <div className='profilecontainer'>
               {/* <img class="profile" src={img3} /> */}
               <div className='namesection'>
@@ -26,7 +26,7 @@ const Resume = () => {
           <DownloadLink/>
          
         </div>
-        <div className='col2 item'>
+        <div className='col2 item' data-aos="fade-up" >
           <div className='experience'>
             <h4>EXPERIENCE</h4>
             <div className='experience1'>
@@ -34,7 +34,7 @@ const Resume = () => {
               <h5>Software Developer</h5>
               <h5>AGRICULTURE INSURANCE COMPANY OF INDIA LIMITED / India, New Delhi</h5>
               <p>As a Software Developer at AGRICULTURE INSURANCE COMPANY OF INDIA 
-                  LIMITED, I was responsible for developing and maintaining frontend applications to support the company's 
+                  LIMITED, I am responsible for developing and maintaining frontend applications to support the company's 
                   operations. During my time at the company, I gained valuable experience in 
                   HTML, CSS, Javascript, Django.</p>
             </div>
@@ -51,7 +51,7 @@ const Resume = () => {
           </div>
             
         </div>
-        <div className='col3 item'>
+        <div className='col3 item' data-aos="fade-left">
         <div className='education col3_item'>
             <h4>EDUCATION</h4>
             <div>

@@ -8,8 +8,7 @@ import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter,faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons';
-
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
   const [loading,setLoading]=useState(false)
   const [formData, setFormData] = useState({
@@ -67,10 +66,13 @@ const Contact = () => {
       });
     }
   return (
-    <div className='contact'>
+    <div className='contact' data-aos="fade-up"  data-aos-anchor-placement="top-center">
     <div className='contact_row'>
       <div className='row_item item1'>
         <div className='links_container'>
+          <div className='mobilegmaillink'>
+            <p className='mobileemailaddress'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
+          </div>
           <div className='socialLinks'>
             <a href='https://www.linkedin.com/in/nikhil-k-14159810b'><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
             <a href='https://twitter.com/Nikhilk9839?t=oe0RHy9pCeCuR6lrHu-1GA&s=08'><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
@@ -79,6 +81,7 @@ const Contact = () => {
         </div>
         <div className='svg_container'>
           <img className='contactme' src={contactme} alt="svg" />
+          <p className='emailaddress'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
         </div>
       </div>
       <div className='formcontainer row_item item2'>
