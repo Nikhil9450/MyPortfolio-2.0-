@@ -13,10 +13,21 @@ import "./Header.css";
  
 
 const Header = () => {
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+  
+    const targetElement = document.getElementById(targetId);
+  
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      handleClose(); // Close the mobile menu after clicking a link
+    }
+  };
   return (
     <>
     <div className='Header_container'>
@@ -27,9 +38,9 @@ const Header = () => {
       <div>
        {/* <a href='#firstsection'><img className='logo' src={logo} alt="logo" /></a> */}
      
-        <a href='#thirdsection'>Resume</a>
-        <a href='#fourthsection'>Works</a>
-        <a href='#fifthsection'>Contact</a> 
+        <a href='#thirdsection' onClick={(e) => handleSmoothScroll(e, 'thirdsection')}>Resume</a>
+        <a href='#fourthsection' onClick={(e) => handleSmoothScroll(e, 'fourthsection')}>Works</a>
+        <a href='#fifthsection' onClick={(e) => handleSmoothScroll(e, 'fifthsection')}>Contact</a> 
       </div>
       <div>
         <a href='https://www.linkedin.com/in/nikhil-k-14159810b'><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
@@ -52,9 +63,9 @@ const Header = () => {
           
             <div className='sectionLinks'>
               <div className='sectionLinks'>
-                <a href='#thirdsection' onClick={handleClose}>Resume</a>
-                <a href='#fourthsection' onClick={handleClose}>Works</a>
-                <a href='#fifthsection' onClick={handleClose}>Contact</a> 
+                <a href='#thirdsection' onClick={(e) => handleSmoothScroll(e, 'thirdsection')}>Resume</a>
+                <a href='#fourthsection' onClick={(e) => handleSmoothScroll(e, 'fourthsection')}>Works</a>
+                <a href='#fifthsection' onClick={(e) => handleSmoothScroll(e, 'fifthsection')}>Contact</a> 
               </div>
               <div className='socialLinks'>
                 <a href='https://www.linkedin.com/in/nikhil-k-14159810b' onClick={handleClose}><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>

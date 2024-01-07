@@ -84,9 +84,13 @@ const Contact = () => {
                 <h1>Contact me</h1>
                 <h5 className='looking' style={{ fontFamily: 'Meow Script, cursive' }}>Looking forward to hearing you from</h5>
               </div>
-              <div style={{ padding: '2rem 1rem', width:'15rem' }}>
-                <p className='p1'><FontAwesomeIcon icon={faPhone} size="lg"/> +919839148210</p>
-                <p className='p1'><FontAwesomeIcon icon={faEnvelope} size="lg"/> nikhilk9450@gmail.com</p>
+              <div className='mobileP1' >
+                <p className='p1'>+919839148210 <FontAwesomeIcon icon={faPhone} size="sm"/> </p>
+                <p className='p1'> nikhilk9450@gmail.com <FontAwesomeIcon icon={faEnvelope} size="sm"/></p>
+              </div>
+              <div className='desktopP1'>
+                <p className='p1'> <FontAwesomeIcon icon={faPhone} size="sm"/> +919839148210</p>
+                <p className='p1'> <FontAwesomeIcon icon={faEnvelope} size="sm"/> nikhilk9450@gmail.com</p>
               </div>
             </div>
         </div>

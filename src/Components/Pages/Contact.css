@@ -152,6 +152,13 @@ min-height: inherit;
 .looking{
     font-size: 2rem;
 }
+.mobileP1{
+    display: none;
+}
+.desktopP1{
+    padding:0rem 1rem;
+    width: 15rem;
+}
 @media screen and (max-width: 900px){
   .contact-cont{
     display: flex;
@@ -161,6 +168,9 @@ min-height: inherit;
     padding: 1rem;
     padding-bottom: 1rem;
   }  
+  .contact-cont h1{
+    font-size:1.5rem;
+  }
   .contact_row{
     flex-direction: column;
   }
@@ -175,6 +185,17 @@ min-height: inherit;
     display: none;
 
 }
+.desktopP1{
+    display: none;
+}
+.mobileP1{
+    padding: 1rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
 .mobileemailaddress{
     color: grey;
     font-family: 'Raleway';
@@ -182,7 +203,7 @@ min-height: inherit;
     display: block;
 }
 .looking{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .p1{
     font-size: 12px;
@@ -194,11 +215,25 @@ min-height: inherit;
   margin: 0px;
 }
 .svg_container{
-    height: 15rem;
+    height: 10rem;
 }
 }
 
+@media screen and (max-width: 500px){
+    .contact-cont h1{
+        font-size:1.2rem;
+      }
+      .looking{
+        font-size: 1rem;
+    }
+    .mobileP1{
+        padding: 1rem 0rem;
 
+    }
+    .svg_container{
+        height: 8rem;
+    }
+}
 /* .contact{
     display: flex;
     justify-content: center;

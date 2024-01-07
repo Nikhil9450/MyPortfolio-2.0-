@@ -12,12 +12,12 @@ const Footer = () => {
         <img className='footer_logo' src={logo} alt="logo" />
       </div>
       <div className='other_detail'>
-       <div className='name_position'>
+       {/* <div className='name_position'>
           <h1 className='footer_name'>Nikhil Kushwaha</h1>
           <h1 className='position'>React Developer</h1>
-       </div>
+       </div> */}
        <div>
-        <h5>Excellence in Frontend Development.</h5>
+        <h5 style={{textAlign:'end'}}>Excellence in Frontend Development.</h5>
        </div>
        <div className='footer_socialLinks'>
           <a href='https://www.linkedin.com/in/nikhil-k-14159810b'><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
