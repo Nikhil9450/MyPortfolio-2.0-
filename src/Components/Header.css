@@ -72,8 +72,7 @@
 @media screen and (max-width: 800px) {
     .Offcanva_body{
          display: flex;
-         justify-content: center;
-         align-items: center;
+         align-items: start;
     }
     .Header_container{
         display: none;
@@ -100,7 +99,7 @@
     
     .mobileHeader a{
         text-decoration: none;
-        color: rgb(58, 57, 57);
+        color: rgb(97, 96, 96);
         margin: .5rem;
         font-family: 'Quicksand', sans-serif;
     }
@@ -109,17 +108,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .sectionLinks{
         display: flex;
         flex-direction: column;
-       align-items: center;
+        align-items: start;
+        width: 100%;
 
     }
     .mobilecontents a{
         text-decoration: none;
-        color: rgb(58, 57, 57);
+        color: rgb(95, 95, 95);
         margin: .5rem;
         font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
     }
   }

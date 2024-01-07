@@ -7,6 +7,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../asset/LOGO.png';
 import mobile_logo from '../asset/MOBILE_LOGO.png';
 import "./Header.css";
+import { animateScroll as scroll } from 'react-scroll';
+import { scroller } from 'react-scroll';
 // import MobileMenu from './MobileMenu';
 
 
@@ -18,15 +20,18 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
-  
-    const targetElement = document.getElementById(targetId);
-  
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-      handleClose(); // Close the mobile menu after clicking a link
-    }
+    
+    scroller.scrollTo(targetId, {
+      duration: 800,
+      offset:0,
+    });
+    setTimeout(() => {
+      handleClose(); // Close the mobile menu after a delay
+    }, 500); // Adjust the delay as needed
+  // Close the mobile menu after clicking a link
   };
   return (
     <>
@@ -55,7 +60,7 @@ const Header = () => {
       {/* <button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button> */}
       {show? <button className='menubutton' onClick={handleClose}><FontAwesomeIcon icon={faXmark} /></button>:<button className='menubutton' onClick={handleShow}><FontAwesomeIcon icon={faBars} /></button>}
       
-      <Offcanvas show={show} onHide={handleClose} scroll={false} backdrop= {true} style={{ width: '250px' }}>
+      <Offcanvas show={show} onHide={handleClose} scroll={false} backdrop= {true} style={{ width: '100%',maxWidth:'250px' }}>
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body className='Offcanva_body'>
@@ -67,11 +72,11 @@ const Header = () => {
                 <a href='#fourthsection' onClick={(e) => handleSmoothScroll(e, 'fourthsection')}>Works</a>
                 <a href='#fifthsection' onClick={(e) => handleSmoothScroll(e, 'fifthsection')}>Contact</a> 
               </div>
-              <div className='socialLinks'>
+              {/* <div className='socialLinks'>
                 <a href='https://www.linkedin.com/in/nikhil-k-14159810b' onClick={handleClose}><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
                 <a href='https://twitter.com/Nikhilk9839?t=oe0RHy9pCeCuR6lrHu-1GA&s=08' onClick={handleClose}><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
                 <a href='https://github.com/Nikhil9450' onClick={handleClose}><FontAwesomeIcon icon={faGithub} size="lg"/></a>
-              </div> 
+              </div>  */}
             </div>
           </div>
 
