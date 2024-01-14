@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Contact.css";
-import contactme from  '../../asset/contact1.svg';
+// import contactme from  '../../asset/contact1.svg';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Loader from '../Loader';
@@ -50,6 +50,18 @@ const Contact = () => {
           icon: "success",
           title: "Message sent.",
           text: "Thankyou for contacting me.",
+        }).then((result) => {
+          // This code will run when the user clicks "OK"
+          if (result.isConfirmed) {
+            // Add your additional actions or functions here
+            console.log("User clicked OK!");
+            setFormData({
+              name: '',
+              email: '',
+              subject:'',
+              message: '',
+            })
+          }
         });
       })
       .catch((error) => {

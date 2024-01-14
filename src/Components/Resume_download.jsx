@@ -1,5 +1,5 @@
 import React from 'react';
-import pdfFile from '../asset/My_resume.pdf'
+import pdfFile from '../asset/Resume-GoogleDocs.pdf'
 const DownloadLink = () => {
   return (
     <div>
