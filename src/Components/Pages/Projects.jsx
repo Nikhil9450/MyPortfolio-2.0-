@@ -14,6 +14,7 @@ import img3 from '../../asset/Capture2.JPG';
 import img4 from '../../asset/Capture4.jpg';
 import img5 from '../../asset/Capture5.jpg';
 import img6 from '../../asset/Capture6.jpg';
+import img7 from '../../asset/MealMastermind.png'
 import {Container, Col,Row,Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Project.css";
@@ -109,9 +110,22 @@ const Projects = () => {
                   <Card.Body>
                     <Card.Title>My Portfolio</Card.Title>
                     <Card.Text>
-                    It is my portfilio. I am working on it to make it better day by day.
+                    It is my old portfolio.
                     </Card.Text>
                     <Card.Link href="https://my-portfolio-a564b.web.app/">Open Project</Card.Link>
+                  </Card.Body>
+                </Card>
+
+                </Col>
+                <Col sm className='maincolumn'data-aos="fade-up">
+                <Card  className='column'>
+                  <Card.Img variant="top" src={img7} />
+                  <Card.Body>
+                    <Card.Title>Meal Mastermind</Card.Title>
+                    <Card.Text>
+                    This project provides  platform for users to discover, save, and share recipes while providing tools to manage their own recipes and preferences effectively. 
+                    </Card.Text>
+                    <Card.Link href="https://mealmastermind-4e4c7.web.app/">Open Project</Card.Link>
                   </Card.Body>
                 </Card>
 
