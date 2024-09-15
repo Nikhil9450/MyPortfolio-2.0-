@@ -16,7 +16,7 @@ const Resume = () => {
                 <h5>Web Developer</h5>
               </div>
               <p>
-                As a highly skilled Web Developer with 2.1 years of experience, I have a proven 
+                As a highly skilled Web Developer with 2.5 years of experience, I have a proven 
                 track record of delivering exceptional results. My expertise lies in 
                 React, Redux, and JavaScript, along with knowledge of HTML and CSS. I am a quick 
                 learner and thrive in fast-paced environments. My best qualities include adaptability, 
